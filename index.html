@@ -70,8 +70,11 @@
                     <a href="https://www.facebook.com/share/1HURrGGcLs/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gray-300 transition rounded-full"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/abhyuday150?igsh=bXhlNHpjeTlpbTk2" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-gray-300 transition rounded-full"><i class="fab fa-instagram"></i></a>
                 </div>
-                <div class="flex items-center space-x-6">
-                    <a href="#/contact" class="border border-white rounded-lg px-3 py-1 hover:bg-white hover:text-green-800 transition text-xs sm:text-sm">Enquiry Form</a>
+                <div class="flex items-center space-x-4 sm:space-x-6">
+                    <button id="language-toggle" class="text-white hover:text-gray-300 transition text-lg" aria-label="Toggle language">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <a href="#/contact" class="border border-white rounded-lg px-3 py-1 hover:bg-white hover:text-green-800 transition text-xs sm:text-sm" data-translate="enquiryFormLink">Enquiry Form</a>
                     <div class="hidden sm:flex items-center space-x-2">
                         <i class="fas fa-phone-alt"></i>
                         <a href="tel:+919111980203" class="hover:text-gray-300 transition">9111980203</a>
@@ -87,18 +90,18 @@
                 <a href="#/home" class="flex items-center nav-link">
                     <img src="WhatsApp Image 2025-10-04 at 15.33.39_b4a0e95d.jpg" alt="Abhyuday School Logo" class="h-12 mr-3">
                     <div>
-                        <span class="text-xl font-bold text-green-700">Abhyuday High. Sec. School</span>
-                        <span class="block text-xs font-semibold text-gray-500 tracking-wider">Neemuch</span>
+                        <span class="text-xl font-bold text-green-700" data-translate="schoolName">Abhyuday High. Sec. School</span>
+                        <span class="block text-xs font-semibold text-gray-500 tracking-wider" data-translate="schoolLocation">Neemuch</span>
                     </div>
                 </a>
                 <div class="hidden md:flex space-x-6 items-center">
-                    <a href="#/home" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">Home</a>
-                    <a href="#/about" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">About Us</a>
-                    <a href="#/events" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">Events</a>
-                    <a href="#/gallery" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">Gallery</a>
-                    <a href="#/syllabus" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">Syllabus</a>
-                    <a href="#/result" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1">Result</a>
-                    <a href="#/contact" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition shadow-md">Contact</a>
+                    <a href="#/home" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navHome">Home</a>
+                    <a href="#/about" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navAbout">About Us</a>
+                    <a href="#/events" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navEvents">Events</a>
+                    <a href="#/gallery" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navGallery">Gallery</a>
+                    <a href="#/syllabus" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navSyllabus">Syllabus</a>
+                    <a href="#/result" class="text-gray-600 hover:text-green-700 transition nav-link rounded-lg px-2 py-1" data-translate="navResult">Result</a>
+                    <a href="#/contact" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition shadow-md" data-translate="navContact">Contact</a>
                 </div>
                 <button id="mobile-menu-button" aria-label="Toggle menu" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition">
                     <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -107,13 +110,13 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-white shadow-lg transition-all duration-300 ease-in-out">
-            <a href="#/home" class="block py-2 text-gray-600 hover:text-green-700 nav-link">Home</a>
-            <a href="#/about" class="block py-2 text-gray-600 hover:text-green-700 nav-link">About Us</a>
-            <a href="#/events" class="block py-2 text-gray-600 hover:text-green-700 nav-link">Events</a>
-            <a href="#/gallery" class="block py-2 text-gray-600 hover:text-green-700 nav-link">Gallery</a>
-            <a href="#/syllabus" class="block py-2 text-gray-600 hover:text-green-700 nav-link">Syllabus</a>
-            <a href="#/result" class="block py-2 text-gray-600 hover:text-green-700 nav-link">Result</a>
-            <a href="#/contact" class="block mt-4 bg-green-600 text-white px-4 py-2 rounded-lg text-center hover:bg-green-700 shadow-md">Contact</a>
+            <a href="#/home" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navHomeMobile">Home</a>
+            <a href="#/about" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navAboutMobile">About Us</a>
+            <a href="#/events" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navEventsMobile">Events</a>
+            <a href="#/gallery" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navGalleryMobile">Gallery</a>
+            <a href="#/syllabus" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navSyllabusMobile">Syllabus</a>
+            <a href="#/result" class="block py-2 text-gray-600 hover:text-green-700 nav-link" data-translate="navResultMobile">Result</a>
+            <a href="#/contact" class="block mt-4 bg-green-600 text-white px-4 py-2 rounded-lg text-center hover:bg-green-700 shadow-md" data-translate="navContactMobile">Contact</a>
         </div>
     </header>
 
@@ -123,16 +126,16 @@
             <!-- Hero Section -->
             <section class="hero-bg text-white h-[60vh] md:h-[80vh] flex items-center rounded-b-xl shadow-2xl">
                 <div class="container mx-auto px-6 text-center">
-                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fadeIn">Excellence in Education</h1>
-                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90">Providing a nurturing environment for students to learn, grow, and succeed in Neemuch, Madhya Pradesh.</p>
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fadeIn" data-translate="heroTitle">Excellence in Education</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto opacity-90" data-translate="heroSubtitle">Providing a nurturing environment for students to learn, grow, and succeed in Neemuch, Madhya Pradesh.</p>
                 </div>
             </section>
             <!-- Key Information Section -->
             <section id="home-services" class="py-16 md:py-24 bg-gray-50">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Essential Information</h2>
-                        <p class="text-gray-600 mt-2">Find everything you need to know about our school community.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="essentialInfoTitle">Essential Information</h2>
+                        <p class="text-gray-600 mt-2" data-translate="essentialInfoSubtitle">Find everything you need to know about our school community.</p>
                     </div>
                     <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                         <!-- Admissions Card -->
@@ -140,16 +143,16 @@
                             <div class="bg-green-100 text-green-700 rounded-full h-16 w-16 flex items-center justify-center mb-6 shadow-inner">
                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-3">Essential Document for Admission</h3>
-                            <p class="text-gray-600">Click to fill out the essential document for admission for the upcoming academic year.</p>
+                            <h3 class="text-2xl font-semibold mb-3" data-translate="admissionCardTitle">Essential Document for Admission</h3>
+                            <p class="text-gray-600" data-translate="admissionCardDesc">Click to view the list of essential documents for the upcoming academic year.</p>
                         </div>
                         <!-- Syllabus Card -->
                         <a href="#/syllabus" class="block bg-white p-8 rounded-xl shadow-xl transform hover:-translate-y-2 transition duration-300 border-t-4 border-blue-500/50">
                             <div class="bg-green-100 text-green-700 rounded-full h-16 w-16 flex items-center justify-center mb-6 shadow-inner">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29-3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" /></svg>
                             </div>
-                            <h3 class="text-2xl font-semibold mb-3">Syllabus Overview</h3>
-                            <p class="text-gray-600">Explore our comprehensive curriculum for all classes.</p>
+                            <h3 class="text-2xl font-semibold mb-3" data-translate="syllabusCardTitle">Syllabus Overview</h3>
+                            <p class="text-gray-600" data-translate="syllabusCardDesc">Explore our comprehensive curriculum for all classes.</p>
                         </a>
                     </div>
                 </div>
@@ -160,11 +163,11 @@
                 <div class="container mx-auto px-6">
                     <div class="grid md:grid-cols-2 gap-12 items-center">
                         <div class="order-2 md:order-1">
-                            <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">Welcome to Abhyuday High. Sec. School</h2>
-                            <p class="text-gray-700 mb-6 leading-relaxed">
+                            <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4" data-translate="welcomeTitle">Welcome to Abhyuday High. Sec. School</h2>
+                            <p class="text-gray-700 mb-6 leading-relaxed" data-translate="welcomeDesc">
                                 Abhyuday Higher Secondary School is a cornerstone of quality education in Neemuch, committed to academic rigor and holistic excellence. Under the proficient leadership of our principal and director, we foster an environment of critical thinking, moral values, and digital-first communication for our community.
                             </p>
-                            <a href="#/about" class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-md inline-block">Learn More About Us</a>
+                            <a href="#/about" class="bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-md inline-block" data-translate="learnMoreBtn">Learn More About Us</a>
                         </div>
                         <div class="order-1 md:order-2">
                             <img src="https://placehold.co/600x400/d1fae5/105943?text=Our+Campus" alt="Abhyuday School Campus" class="rounded-xl shadow-2xl w-full h-auto">
@@ -179,23 +182,23 @@
             <section id="about" class="py-16 md:py-24 bg-white">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Welcome to Abhyuday Higher Secondary School</h2>
-                        <p class="text-gray-600 mt-2">A reputed educational institution committed to shaping future leaders.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="aboutPageTitle">Welcome to Abhyuday Higher Secondary School</h2>
+                        <p class="text-gray-600 mt-2" data-translate="aboutPageSubtitle">A reputed educational institution committed to shaping future leaders.</p>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 items-center">
                         <div>
                             <img src="https://placehold.co/600x400/d1fae5/105943?text=Our+Leadership" alt="School Leadership" class="rounded-xl shadow-2xl w-full h-auto">
                         </div>
                         <div>
-                            <h3 class="text-2xl font-semibold mb-4 text-green-700 border-b pb-2">Our Vision and Leadership</h3>
-                            <p class="text-gray-700 mb-4 leading-relaxed">
+                            <h3 class="text-2xl font-semibold mb-4 text-green-700 border-b pb-2" data-translate="visionTitle">Our Vision and Leadership</h3>
+                            <p class="text-gray-700 mb-4 leading-relaxed" data-translate="visionDesc1">
                                 Abhyuday Higher Secondary School is a cornerstone of quality education in Neemuch. We aim to provide a **digital-first experience** for parents and students, making academic information and school communication transparent and readily accessible.
                             </p>
-                            <p class="text-gray-700 leading-relaxed">
+                            <p class="text-gray-700 leading-relaxed" data-translate="visionDesc2">
                                 Under the proficient leadership of **Principal Deshna Jain** and **Director/Owner Mr. Prakash Jain**, we are dedicated to academic rigor and holistic excellence, fostering critical thinking and moral values.
                             </p>
                             <blockquote class="mt-6 p-4 border-l-4 border-green-600 bg-gray-50 rounded-r-lg shadow-sm">
-                                <p class="text-gray-600 italic">
+                                <p class="text-gray-600 italic" data-translate="missionQuote">
                                     "Our mission is to improve communication and accessibility through modern, interactive technology to better serve our community."
                                 </p>
                             </blockquote>
@@ -210,8 +213,8 @@
             <section id="events" class="py-16 md:py-24 bg-white overflow-hidden">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">School Life & Events Calendar</h2>
-                        <p class="text-gray-600 mt-2">Celebrating learning, creativity, and sportsmanship throughout the year.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="eventsTitle">School Life & Events Calendar</h2>
+                        <p class="text-gray-600 mt-2" data-translate="eventsSubtitle">Celebrating learning, creativity, and sportsmanship throughout the year.</p>
                     </div>
 
                     <div id="event-slider-container" class="relative max-w-6xl mx-auto">
@@ -230,7 +233,7 @@
                         </button>
                     </div>
                       <!-- Mobile Swipe Hint -->
-                    <div class="text-center mt-6 text-sm text-gray-500 md:hidden">
+                    <div class="text-center mt-6 text-sm text-gray-500 md:hidden" data-translate="swipeHint">
                         <i class="fas fa-arrows-alt-h mr-2"></i> Swipe left or right to see more events.
                     </div>
                 </div>
@@ -242,37 +245,37 @@
              <section id="gallery" class="py-16 md:py-24 bg-gray-50">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Our Campus Gallery</h2>
-                        <p class="text-gray-600 mt-2">A glimpse into the vibrant life at Abhyuday School.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="galleryTitle">Our Campus Gallery</h2>
+                        <p class="text-gray-600 mt-2" data-translate="gallerySubtitle">A glimpse into the vibrant life at Abhyuday School.</p>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                         <a href="#" data-category="classroom" class="gallery-category-link group aspect-square block rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl relative">
                             <img src="classroom.jpg" alt="Classroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="text-white text-lg font-bold">Classrooms</span>
+                                <span class="text-white text-lg font-bold" data-translate="galleryClassrooms">Classrooms</span>
                             </div>
                         </a>
                         <a href="#" data-category="science_lab" class="gallery-category-link group aspect-square block rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl relative">
                              <img src="Bio-lab.jpg" alt="Science Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="text-white text-lg font-bold">Science Lab</span>
+                                <span class="text-white text-lg font-bold" data-translate="galleryScienceLab">Science Lab</span>
                             </div>
                         </a>
                          <a href="#" data-category="assembly" class="gallery-category-link group aspect-square block rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl relative">
                              <img src="Assembly.jpg" alt="Assembly" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                               <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="text-white text-lg font-bold">Assembly</span>
+                                <span class="text-white text-lg font-bold" data-translate="galleryAssembly">Assembly</span>
                             </div>
                         </a>
                          <a href="#" data-category="computer_lab" class="gallery-category-link group aspect-square block rounded-xl overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl relative">
                             <img src="computer-lab.jpg" alt="Computer Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                              <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                <span class="text-white text-lg font-bold">Computer Lab</span>
+                                <span class="text-white text-lg font-bold" data-translate="galleryComputerLab">Computer Lab</span>
                             </div>
                         </a>
                     </div>
                      <div class="text-center mt-6">
-                         <p class="text-gray-600">Click on a category to explore the photos.</p>
+                         <p class="text-gray-600" data-translate="galleryHint">Click on a category to explore the photos.</p>
                      </div>
                 </div>
             </section>
@@ -283,150 +286,27 @@
             <section id="syllabus" class="py-16 md:py-24 bg-gray-50">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Curriculum & Syllabus</h2>
-                        <p class="text-gray-600 mt-2">An overview of subjects offered across different levels as per the MP Board curriculum.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="syllabusTitle">Curriculum & Syllabus</h2>
+                        <p class="text-gray-600 mt-2" data-translate="syllabusSubtitle">An overview of subjects offered across different levels as per the MP Board curriculum.</p>
                     </div>
                     <div class="max-w-5xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl">
                         <!-- Tabs -->
                         <div class="border-b border-gray-200">
                             <nav id="syllabus-tabs-page" class="flex flex-wrap -mb-px" aria-label="Tabs">
-                                <a href="#" data-tab="pre-primary" class="syllabus-tab-page active-tab font-semibold text-sm px-4 py-3 rounded-t-lg transition">Pre-Primary</a>
-                                <a href="#" data-tab="primary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition">Primary (1-5)</a>
-                                <a href="#" data-tab="middle" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition">Middle (6-8)</a>
-                                <a href="#" data-tab="secondary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition">Secondary (9-10)</a>
-                                <a href="#" data-tab="higher-secondary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition">Higher Secondary (11-12)</a>
+                                <a href="#" data-tab="pre-primary" class="syllabus-tab-page active-tab font-semibold text-sm px-4 py-3 rounded-t-lg transition" data-translate="tabPrePrimary">Pre-Primary</a>
+                                <a href="#" data-tab="primary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition" data-translate="tabPrimary">Primary (1-5)</a>
+                                <a href="#" data-tab="middle" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition" data-translate="tabMiddle">Middle (6-8)</a>
+                                <a href="#" data-tab="secondary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition" data-translate="tabSecondary">Secondary (9-10)</a>
+                                <a href="#" data-tab="higher-secondary" class="syllabus-tab-page text-gray-600 font-semibold text-sm px-4 py-3 rounded-t-lg transition" data-translate="tabHigherSecondary">Higher Secondary (11-12)</a>
                             </nav>
                         </div>
                         <!-- Tab Content -->
                         <div id="syllabus-content-page" class="mt-8">
-                            <div data-content="pre-primary" class="syllabus-content-pane-page">
-                                <h3 class="text-2xl font-bold mb-4 text-green-700">Pre-Primary (Nursery, LKG, UKG)</h3>
-                                <p class="text-gray-600 mb-6">Focus on foundational learning through **play-based activities**, ensuring cognitive, social, and motor skill development.</p>
-                                <div class="grid md:grid-cols-1 gap-8 max-w-md mx-auto">
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3 flex items-center"><i class="fas fa-globe mr-2"></i> English Medium Focus</h4>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                                            <li>English (Phonics, Rhymes, Writing)</li>
-                                            <li>Hindi (Akshar Gyan, Kavita)</li>
-                                            <li>Mathematics (Numbers, Shapes, Colors)</li>
-                                            <li>General Awareness (Fruits, Animals, Our Body)</li>
-                                            <li>Art & Craft, Music, and Dance</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-content="primary" class="syllabus-content-pane-page hidden">
-                                <h3 class="text-2xl font-bold mb-4 text-green-700">Primary (Classes 1 - 5)</h3>
-                                <p class="text-gray-600 mb-6">Building **core academic skills** in literacy, numeracy, and environmental awareness.</p>
-                                <div class="space-y-4">
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Languages (English & Hindi)</h4>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm space-y-1">
-                                            <li>Grammar and Vocabulary Building</li>
-                                            <li>Reading Comprehension and Story Telling</li>
-                                            <li>Creative Writing and Composition</li>
-                                        </ul>
-                                    </div>
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Mathematics</h4>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm space-y-1">
-                                            <li>Number System and Arithmetic Operations</li>
-                                            <li>Basic Geometry: Shapes and Spatial Understanding</li>
-                                            <li>Measurement of Length, Weight, and Capacity</li>
-                                            <li>Introduction to Data Handling</li>
-                                        </ul>
-                                    </div>
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Environmental Studies (EVS)</h4>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 text-sm space-y-1">
-                                            <li>Our Body, Family, and Festivals</li>
-                                            <li>Plants, Animals, and Our Environment</li>
-                                            <li>Water, Air, and Weather</li>
-                                        </ul>
-                                    </div>
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Other Subjects</h4>
-                                         <ul class="list-disc list-inside mt-2 text-gray-700 text-sm space-y-1">
-                                            <li>Computer Science: Basic digital literacy and MS Office</li>
-                                            <li>General Knowledge & Moral Science</li>
-                                            <li>Art, Craft, Music, and Physical Education</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-content="middle" class="syllabus-content-pane-page hidden">
-                                <h3 class="text-2xl font-bold mb-4 text-green-700">Middle (Classes 6 - 8)</h3>
-                                <p class="text-gray-600 mb-6">Transitioning to **specialized subjects** with an introduction to core scientific and social principles.</p>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="p-4 bg-green-50 rounded-lg space-y-3">
-                                        <div>
-                                            <h4 class="font-bold text-green-800">Languages</h4>
-                                            <p class="text-sm text-gray-700">English, Hindi, and Sanskrit (as third language)</p>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-bold text-green-800">Mathematics</h4>
-                                             <p class="text-sm text-gray-700">Algebra, Geometry, Mensuration, and Data Handling.</p>
-                                        </div>
-                                         <div>
-                                            <h4 class="font-bold text-green-800">Computer Science</h4>
-                                             <p class="text-sm text-gray-700">Programming basics, Internet concepts, and advanced tools.</p>
-                                        </div>
-                                    </div>
-                                    <div class="p-4 bg-green-50 rounded-lg space-y-3">
-                                        <div>
-                                            <h4 class="font-bold text-green-800">Science</h4>
-                                            <ul class="list-disc list-inside mt-1 text-gray-700 text-sm space-y-1">
-                                                <li><b>Physics:</b> Motion, Force, Light, Electricity</li>
-                                                <li><b>Chemistry:</b> Matter, Atoms, Acids & Bases, Metals</li>
-                                                <li><b>Biology:</b> Cells, Microorganisms, Conservation</li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-bold text-green-800">Social Science</h4>
-                                             <ul class="list-disc list-inside mt-1 text-gray-700 text-sm space-y-1">
-                                                <li><b>History:</b> Ancient, Medieval, and Modern India</li>
-                                                <li><b>Civics:</b> Constitution, Government, Democracy</li>
-                                                <li><b>Geography:</b> Earth, Resources, Agriculture</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-content="secondary" class="syllabus-content-pane-page hidden">
-                                <h3 class="text-2xl font-bold mb-4 text-green-700">Secondary (Classes 9 - 10)</h3>
-                                <p class="text-gray-600 mb-6">Preparing students for **board examinations** with a structured, intensive curriculum.</p>
-                                <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3">Compulsory Subjects (MP Board)</h4>
-                                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-2 grid sm:grid-cols-2">
-                                    <li>Hindi</li>
-                                    <li>Sanskrit</li>
-                                    <li>English (Language & Literature)</li>
-                                    <li>Mathematics (Standard / Basic)</li>
-                                    <li>Science (Theory & Practical)</li>
-                                    <li>Social Science (History, Geography, Economics, Political Science)</li>
-                                </ul>
-                            </div>
-                            <div data-content="higher-secondary" class="syllabus-content-pane-page hidden">
-                                <h3 class="text-2xl font-bold mb-4 text-green-700">Higher Secondary (Classes 11 - 12)</h3>
-                                <p class="text-gray-600 mb-6">Offering specialized streams to align with **career aspirations** and higher education pathways.</p>
-                                <div class="space-y-6">
-                                    <div class="p-4 border border-green-200 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Science Stream</h4>
-                                        <p class="text-gray-700 mt-1">Physics, Chemistry, **Mathematics / Biology**, English, Hindi.</p>
-                                    </div>
-                                    <div class="p-4 border border-green-200 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Commerce Stream</h4>
-                                        <p class="text-gray-700 mt-1">Accountancy, Business Studies, Economics, English, Hindi.</p>
-                                    </div>
-                                    <div class="p-4 border border-green-200 rounded-lg">
-                                        <h4 class="font-bold text-green-800">Arts Stream</h4>
-                                        <p class="text-gray-700 mt-1">History, Political Science, Sociology, Economics, English, Hindi.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <!-- Pre-Primary Content -->
                         </div>
                     </div>
                     <div class="mt-12 text-center">
-                        <a href="#/contact" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold transition">
+                        <a href="#/contact" class="inline-flex items-center text-green-600 hover:text-green-800 font-semibold transition" data-translate="syllabusContact">
                             <i class="fas fa-info-circle mr-2"></i> For a detailed class-wise syllabus, please contact the school office.
                         </a>
                     </div>
@@ -439,44 +319,44 @@
             <section id="result" class="py-16 md:py-24 bg-gray-50">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Check Your Results</h2>
-                        <p class="text-gray-600 mt-2">Enter your details below to view your academic results.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="resultTitle">Check Your Results</h2>
+                        <p class="text-gray-600 mt-2" data-translate="resultSubtitle">Enter your details below to view your academic results.</p>
                     </div>
                     <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
                         <form id="resultForm">
                             <div class="mb-5">
-                                <label for="rollNumber" class="block mb-2 font-medium text-gray-700">Roll Number</label>
-                                <input type="text" id="rollNumber" name="rollNumber" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="Enter your roll number" required>
+                                <label for="rollNumber" class="block mb-2 font-medium text-gray-700" data-translate="rollNumberLabel">Roll Number</label>
+                                <input type="text" id="rollNumber" name="rollNumber" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" data-translate-placeholder="rollNumberPlaceholder" placeholder="Enter your roll number" required>
                             </div>
                              <div class="mb-5">
-                                <label for="resultClass" class="block mb-2 font-medium text-gray-700">Select Class</label>
+                                <label for="resultClass" class="block mb-2 font-medium text-gray-700" data-translate="selectClassLabel">Select Class</label>
                                 <select id="resultClass" name="resultClass" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required>
-                                    <option value="" disabled selected>-- Select your class --</option>
-                                    <optgroup label="Primary (1st - 5th)">
-                                        <option value="1">Class 1</option>
-                                        <option value="2">Class 2</option>
-                                        <option value="3">Class 3</option>
-                                        <option value="4">Class 4</option>
-                                        <option value="5">Class 5</option>
+                                    <option value="" disabled selected data-translate="selectClassOption">-- Select your class --</option>
+                                    <optgroup label="Primary (1st - 5th)" data-translate="optPrimary">
+                                        <option value="1" data-translate="class1">Class 1</option>
+                                        <option value="2" data-translate="class2">Class 2</option>
+                                        <option value="3" data-translate="class3">Class 3</option>
+                                        <option value="4" data-translate="class4">Class 4</option>
+                                        <option value="5" data-translate="class5">Class 5</option>
                                     </optgroup>
-                                    <optgroup label="Middle (6th - 8th)">
-                                        <option value="6">Class 6</option>
-                                        <option value="7">Class 7</option>
-                                        <option value="8">Class 8</option>
+                                    <optgroup label="Middle (6th - 8th)" data-translate="optMiddle">
+                                        <option value="6" data-translate="class6">Class 6</option>
+                                        <option value="7" data-translate="class7">Class 7</option>
+                                        <option value="8" data-translate="class8">Class 8</option>
                                     </optgroup>
-                                     <optgroup label="Secondary (9th - 10th)">
-                                        <option value="9">Class 9</option>
-                                        <option value="10">Class 10</option>
+                                     <optgroup label="Secondary (9th - 10th)" data-translate="optSecondary">
+                                        <option value="9" data-translate="class9">Class 9</option>
+                                        <option value="10" data-translate="class10">Class 10</option>
                                     </optgroup>
-                                    <optgroup label="Higher Secondary (11th - 12th)">
-                                        <option value="11">Class 11</option>
-                                        <option value="12">Class 12</option>
+                                    <optgroup label="Higher Secondary (11th - 12th)" data-translate="optHigherSecondary">
+                                        <option value="11" data-translate="class11">Class 11</option>
+                                        <option value="12" data-translate="class12">Class 12</option>
                                     </optgroup>
                                 </select>
                             </div>
-                            <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-lg">View Result</button>
+                            <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-lg" data-translate="viewResultBtn">View Result</button>
                         </form>
-                        <p id="result-info" class="text-center text-sm text-gray-500 mt-4">Note: Result functionality is currently under development. Please contact the school for official results.</p>
+                        <p id="result-info" class="text-center text-sm text-gray-500 mt-4" data-translate="resultInfo">Note: Result functionality is currently under development. Please contact the school for official results.</p>
                     </div>
                 </div>
             </section>
@@ -487,24 +367,24 @@
             <section id="contact" class="py-16 md:py-24 bg-gray-50">
                 <div class="container mx-auto px-6">
                     <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-green-800">Get in Touch with Abhyuday High. Sec. School</h2>
-                        <p class="text-gray-600 mt-2">We are here to answer your questions regarding admissions, curriculum, and general school operations.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold text-green-800" data-translate="contactTitle">Get in Touch with Abhyuday High. Sec. School</h2>
+                        <p class="text-gray-600 mt-2" data-translate="contactSubtitle">We are here to answer your questions regarding admissions, curriculum, and general school operations.</p>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
                         <div class="bg-white p-8 rounded-xl shadow-2xl border-l-4 border-green-600">
-                            <h3 class="text-2xl font-bold text-green-700 mb-6">School Contact Details</h3>
+                            <h3 class="text-2xl font-bold text-green-700 mb-6" data-translate="contactDetailsTitle">School Contact Details</h3>
                             <div class="space-y-6">
                                 <div class="flex items-start">
                                     <svg class="w-6 h-6 mt-1 mr-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                                     <div>
-                                        <p class="font-semibold text-gray-800">Address</p>
-                                        <p class="text-gray-600">10 Jaroli Bhawan, Dusshera Maidan, Neemuch</p>
+                                        <p class="font-semibold text-gray-800" data-translate="addressLabel">Address</p>
+                                        <p class="text-gray-600" data-translate="addressValue">10 Jaroli Bhawan, Dusshera Maidan, Neemuch</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-6 h-6 mt-1 mr-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                                     <div>
-                                        <p class="font-semibold text-gray-800">Phone</p>
+                                        <p class="font-semibold text-gray-800" data-translate="phoneLabel">Phone</p>
                                         <a href="tel:+919111980203" class="text-green-600 hover:text-green-800 transition">9111980203</a>,
                                         <a href="tel:+919826109798" class="text-green-600 hover:text-green-800 transition">9826109798</a>
                                     </div>
@@ -512,7 +392,7 @@
                                 <div class="flex items-start">
                                     <svg class="w-6 h-6 mt-1 mr-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                                     <div>
-                                        <p class="font-semibold text-gray-800">Email</p>
+                                        <p class="font-semibold text-gray-800" data-translate="emailLabel">Email</p>
                                         <a href="mailto:abhyudayhssnnh@gmail.com" class="text-green-600 hover:text-green-800 transition">abhyudayhssnnh@gmail.com</a>
                                     </div>
                                 </div>
@@ -520,24 +400,24 @@
                         </div>
                         <!-- Inquiry Form -->
                         <div class="bg-white p-8 rounded-xl shadow-2xl">
-                            <h3 class="text-2xl font-bold text-green-700 mb-6">Send an Inquiry</h3>
+                            <h3 class="text-2xl font-bold text-green-700 mb-6" data-translate="sendInquiryTitle">Send an Inquiry</h3>
                             <form id="inquiryForm">
                                 <div class="mb-5">
-                                    <label for="name" class="block mb-2 font-medium text-gray-700">Full Name</label>
-                                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="Parent's Name" required>
+                                    <label for="name" class="block mb-2 font-medium text-gray-700" data-translate="formNameLabel">Full Name</label>
+                                    <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" data-translate-placeholder="formNamePlaceholder" placeholder="Parent's Name" required>
                                 </div>
                                 <div class="mb-5">
-                                    <label for="email" class="block mb-2 font-medium text-gray-700">Email Address</label>
-                                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="you@example.com" required>
+                                    <label for="email" class="block mb-2 font-medium text-gray-700" data-translate="formEmailLabel">Email Address</label>
+                                    <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" data-translate-placeholder="formEmailPlaceholder" placeholder="you@example.com" required>
                                 </div>
                                 <div class="mb-5">
-                                    <label for="message" class="block mb-2 font-medium text-gray-700">Your Message/Inquiry</label>
-                                    <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" placeholder="I would like to know about class 1 admission..." required></textarea>
+                                    <label for="message" class="block mb-2 font-medium text-gray-700" data-translate="formMessageLabel">Your Message/Inquiry</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition" data-translate-placeholder="formMessagePlaceholder" placeholder="I would like to know about class 1 admission..." required></textarea>
                                 </div>
-                                <button type="submit" id="inquiry-submit-btn" class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-lg">Submit Inquiry</button>
+                                <button type="submit" id="inquiry-submit-btn" class="w-full bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition shadow-lg" data-translate="formSubmitBtn">Submit Inquiry</button>
                             </form>
-                            <p id="form-success" class="bg-green-100 border border-green-400 text-green-700 p-3 rounded-lg mt-4 hidden text-center font-medium"><i class='fas fa-check-circle mr-2'></i> Thank you! Your inquiry has been sent. We will contact you shortly.</p>
-                            <p id="form-error" class="bg-red-100 border border-red-400 text-red-700 p-3 rounded-lg mt-4 hidden text-center font-medium"><i class='fas fa-exclamation-triangle mr-2'></i> Something went wrong. Please try again.</p>
+                            <p id="form-success" class="bg-green-100 border border-green-400 text-green-700 p-3 rounded-lg mt-4 hidden text-center font-medium" data-translate="formSuccessMsg"><i class='fas fa-check-circle mr-2'></i> Thank you! Your inquiry has been sent. We will contact you shortly.</p>
+                            <p id="form-error" class="bg-red-100 border border-red-400 text-red-700 p-3 rounded-lg mt-4 hidden text-center font-medium" data-translate="formErrorMsg"><i class='fas fa-exclamation-triangle mr-2'></i> Something went wrong. Please try again.</p>
                         </div>
                     </div>
                 </div>
@@ -554,8 +434,9 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
                 <!-- School Info & Social Links -->
                 <div class="col-span-2 md:col-span-1">
-                    <h3 class="text-xl font-bold text-green-300">Abhyuday High. Sec. School</h3>
-                    <p class="mt-4 text-gray-300 text-sm">Committed to academic and holistic excellence in Neemuch. **Affiliated with MP Board.**</p>
+                    <img src="WhatsApp Image 2025-10-04 at 15.33.39_b4a0e95d.jpg" alt="Abhyuday School Logo" class="h-20 w-20 mb-4 bg-white rounded-full p-1">
+                    <h3 class="text-xl font-bold text-green-300" data-translate="footerSchoolName">Abhyuday High. Sec. School</h3>
+                    <p class="mt-4 text-gray-300 text-sm" data-translate="footerSchoolDesc">Committed to academic and holistic excellence in Neemuch. **Affiliated with MP Board.**</p>
                     <div class="flex space-x-4 mt-6">
                         <a href="https://www.facebook.com/share/1HURrGGcLs/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-300 hover:text-green-400 transition transform hover:scale-110"><i class="fab fa-facebook-f text-lg"></i></a>
                         <a href="https://www.instagram.com/abhyuday150?igsh=bXhlNHpjeTlpbTk2" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-300 hover:text-green-400 transition transform hover:scale-110"><i class="fab fa-instagram text-lg"></i></a>
@@ -564,28 +445,28 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4">Quick Links</h4>
+                    <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4" data-translate="footerQuickLinks">Quick Links</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#/about" class="text-gray-300 hover:text-white transition nav-link">About Us</a></li>
-                        <li><a href="#/events" class="text-gray-300 hover:text-white transition nav-link">Events & News</a></li>
-                        <li><a href="#/gallery" class="text-gray-300 hover:text-white transition nav-link">School Gallery</a></li>
+                        <li><a href="#/about" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerAbout">About Us</a></li>
+                        <li><a href="#/events" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerEvents">Events & News</a></li>
+                        <li><a href="#/gallery" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerGallery">School Gallery</a></li>
                     </ul>
                 </div>
 
                 <!-- Support Links -->
                 <div>
-                    <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4">Support</h4>
+                    <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4" data-translate="footerSupport">Support</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#" id="open-admission-modal-footer" class="text-gray-300 hover:text-white transition">Essential Document for Admission</a></li>
-                        <li><a href="#/syllabus" class="text-gray-300 hover:text-white transition nav-link">Syllabus Details</a></li>
-                        <li><a href="#/result" class="text-gray-300 hover:text-white transition nav-link">Check Results</a></li>
-                        <li><a href="#/contact" class="text-gray-300 hover:text-white transition nav-link">Contact Admissions</a></li>
+                        <li><a href="#" id="open-admission-modal-footer" class="text-gray-300 hover:text-white transition" data-translate="footerAdmissionDoc">Essential Document for Admission</a></li>
+                        <li><a href="#/syllabus" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerSyllabus">Syllabus Details</a></li>
+                        <li><a href="#/result" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerResults">Check Results</a></li>
+                        <li><a href="#/contact" class="text-gray-300 hover:text-white transition nav-link" data-translate="footerContactAdmissions">Contact Admissions</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div class="col-span-2 md:col-span-1">
-                     <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4">Contact Info</h4>
+                     <h4 class="font-semibold tracking-wider uppercase text-green-200 mb-4" data-translate="footerContactInfo">Contact Info</h4>
                      <div class="space-y-4 text-sm">
                           <p class="flex items-center text-gray-300">
                             <i class="fas fa-phone mr-3 w-4 text-center text-green-400"></i>
@@ -600,7 +481,7 @@
                         </p>
                         <p class="flex items-start text-gray-300">
                             <i class="fas fa-map-marker-alt mt-1 mr-3 w-4 text-center text-green-400"></i>
-                            <span>10 Jaroli Bhawan, Dusshera Maidan, Neemuch</span>
+                            <span data-translate="footerAddress">10 Jaroli Bhawan, Dusshera Maidan, Neemuch</span>
                         </p>
                     </div>
                 </div>
@@ -608,7 +489,7 @@
 
             <!-- Copyright -->
             <div class="mt-10 border-t border-green-700/50 pt-6 text-center text-sm text-gray-400">
-                <p>&copy; <span id="current-year"></span> Abhyuday Higher Secondary School. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year"></span> <span data-translate="copyright">Abhyuday Higher Secondary School. All Rights Reserved.</span></p>
             </div>
         </div>
     </footer>
@@ -618,32 +499,32 @@
         <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[95vh] overflow-y-auto transform scale-95 transition-transform duration-300 ease-out">
             <div class="p-6 border-b sticky top-0 bg-white z-10 rounded-t-xl">
                 <div class="flex justify-between items-center">
-                    <h2 class="text-2xl font-bold text-green-800">Essential Documents for Admission</h2>
+                    <h2 class="text-2xl font-bold text-green-800" data-translate="modalAdmissionTitle">Essential Documents for Admission</h2>
                     <button id="close-admission-modal" aria-label="Close admission form" class="text-gray-500 hover:text-gray-800 text-3xl font-light p-2 rounded-full hover:bg-gray-100 transition">&times;</button>
                 </div>
-                <p class="text-gray-600 text-sm mt-1">Please refer to the checklist of required documents for the admission process.</p>
+                <p class="text-gray-600 text-sm mt-1" data-translate="modalAdmissionSubtitle">Please refer to the checklist of required documents for the admission process.</p>
             </div>
             <div class="p-6">
                 <!-- Required Documents Section -->
                 <div class="mb-6 p-4 border border-yellow-300 rounded-lg bg-yellow-50">
-                    <h3 class="text-lg font-bold text-yellow-800 border-b border-yellow-200 pb-2 mb-4 flex items-center">
+                    <h3 class="text-lg font-bold text-yellow-800 border-b border-yellow-200 pb-2 mb-4 flex items-center" data-translate="docChecklistTitle">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                         Required Documents Checklist
                     </h3>
-                    <p class="text-sm text-yellow-700 mb-4">Please prepare the following documents. You may be asked to present them during the admission process.</p>
+                    <p class="text-sm text-yellow-700 mb-4" data-translate="docChecklistSubtitle">Please prepare the following documents. You may be asked to present them during the admission process.</p>
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-gray-700 text-sm list-disc list-inside">
-                        <li>TC (Transfer Certificate)</li>
-                        <li>Marksheet</li>
-                        <li>Migration (for other boards)</li>
-                        <li>Birth Certificate</li>
-                        <li>Aadhar Card</li>
-                        <li>Ration Card</li>
-                        <li>Samagra ID</li>
-                        <li>Caste Certificate</li>
-                        <li>MPTAAS (For SC/ST only)</li>
-                        <li>Income Certificate</li>
-                        <li>Bank Passbook</li>
-                        <li>Parent's ID</li>
+                        <li data-translate="docTC">TC (Transfer Certificate)</li>
+                        <li data-translate="docMarksheet">Marksheet</li>
+                        <li data-translate="docMigration">Migration (for other boards)</li>
+                        <li data-translate="docBirthCert">Birth Certificate</li>
+                        <li data-translate="docAadhar">Aadhar Card</li>
+                        <li data-translate="docRation">Ration Card</li>
+                        <li data-translate="docSamagra">Samagra ID</li>
+                        <li data-translate="docCaste">Caste Certificate</li>
+                        <li data-translate="docMPTAAS">MPTAAS (For SC/ST only)</li>
+                        <li data-translate="docIncome">Income Certificate</li>
+                        <li data-translate="docBank">Bank Passbook</li>
+                        <li data-translate="docParentID">Parent's ID</li>
                     </ul>
                 </div>
             </div>
@@ -701,6 +582,286 @@
             } catch (error) {
                 console.error("Firebase initialization failed:", error);
             }
+
+            // --- LANGUAGE TRANSLATION LOGIC ---
+            const translations = {
+                en: {
+                    enquiryFormLink: "Enquiry Form",
+                    schoolName: "Abhyuday High. Sec. School",
+                    schoolLocation: "Neemuch",
+                    navHome: "Home",
+                    navAbout: "About Us",
+                    navEvents: "Events",
+                    navGallery: "Gallery",
+                    navSyllabus: "Syllabus",
+                    navResult: "Result",
+                    navContact: "Contact",
+                    navHomeMobile: "Home",
+                    navAboutMobile: "About Us",
+                    navEventsMobile: "Events",
+                    navGalleryMobile: "Gallery",
+                    navSyllabusMobile: "Syllabus",
+                    navResultMobile: "Result",
+                    navContactMobile: "Contact",
+                    heroTitle: "Excellence in Education",
+                    heroSubtitle: "Providing a nurturing environment for students to learn, grow, and succeed in Neemuch, Madhya Pradesh.",
+                    essentialInfoTitle: "Essential Information",
+                    essentialInfoSubtitle: "Find everything you need to know about our school community.",
+                    admissionCardTitle: "Essential Document for Admission",
+                    admissionCardDesc: "Click to view the list of essential documents for the upcoming academic year.",
+                    syllabusCardTitle: "Syllabus Overview",
+                    syllabusCardDesc: "Explore our comprehensive curriculum for all classes.",
+                    welcomeTitle: "Welcome to Abhyuday High. Sec. School",
+                    welcomeDesc: "Abhyuday Higher Secondary School is a cornerstone of quality education in Neemuch, committed to academic rigor and holistic excellence. Under the proficient leadership of our principal and director, we foster an environment of critical thinking, moral values, and digital-first communication for our community.",
+                    learnMoreBtn: "Learn More About Us",
+                    aboutPageTitle: "Welcome to Abhyuday Higher Secondary School",
+                    aboutPageSubtitle: "A reputed educational institution committed to shaping future leaders.",
+                    visionTitle: "Our Vision and Leadership",
+                    visionDesc1: "Abhyuday Higher Secondary School is a cornerstone of quality education in Neemuch. We aim to provide a **digital-first experience** for parents and students, making academic information and school communication transparent and readily accessible.",
+                    visionDesc2: "Under the proficient leadership of **Principal Deshna Jain** and **Director/Owner Mr. Prakash Jain**, we are dedicated to academic rigor and holistic excellence, fostering critical thinking and moral values.",
+                    missionQuote: `"Our mission is to improve communication and accessibility through modern, interactive technology to better serve our community."`,
+                    eventsTitle: "School Life & Events Calendar",
+                    eventsSubtitle: "Celebrating learning, creativity, and sportsmanship throughout the year.",
+                    swipeHint: "Swipe left or right to see more events.",
+                    galleryTitle: "Our Campus Gallery",
+                    gallerySubtitle: "A glimpse into the vibrant life at Abhyuday School.",
+                    galleryClassrooms: "Classrooms",
+                    galleryScienceLab: "Science Lab",
+                    galleryAssembly: "Assembly",
+                    galleryComputerLab: "Computer Lab",
+                    galleryHint: "Click on a category to explore the photos.",
+                    syllabusTitle: "Curriculum & Syllabus",
+                    syllabusSubtitle: "An overview of subjects offered across different levels as per the MP Board curriculum.",
+                    tabPrePrimary: "Pre-Primary",
+                    tabPrimary: "Primary (1-5)",
+                    tabMiddle: "Middle (6-8)",
+                    tabSecondary: "Secondary (9-10)",
+                    tabHigherSecondary: "Higher Secondary (11-12)",
+                    syllabusContact: "For a detailed class-wise syllabus, please contact the school office.",
+                    resultTitle: "Check Your Results",
+                    resultSubtitle: "Enter your details below to view your academic results.",
+                    rollNumberLabel: "Roll Number",
+                    rollNumberPlaceholder: "Enter your roll number",
+                    selectClassLabel: "Select Class",
+                    selectClassOption: "-- Select your class --",
+                    optPrimary: "Primary (1st - 5th)",
+                    class1: "Class 1",
+                    class2: "Class 2",
+                    class3: "Class 3",
+                    class4: "Class 4",
+                    class5: "Class 5",
+                    optMiddle: "Middle (6th - 8th)",
+                    class6: "Class 6",
+                    class7: "Class 7",
+                    class8: "Class 8",
+                    optSecondary: "Secondary (9th - 10th)",
+                    class9: "Class 9",
+                    class10: "Class 10",
+                    optHigherSecondary: "Higher Secondary (11th - 12th)",
+                    class11: "Class 11",
+                    class12: "Class 12",
+                    viewResultBtn: "View Result",
+                    resultInfo: "Note: Result functionality is currently under development. Please contact the school for official results.",
+                    contactTitle: "Get in Touch with Abhyuday High. Sec. School",
+                    contactSubtitle: "We are here to answer your questions regarding admissions, curriculum, and general school operations.",
+                    contactDetailsTitle: "School Contact Details",
+                    addressLabel: "Address",
+                    addressValue: "10 Jaroli Bhawan, Dusshera Maidan, Neemuch",
+                    phoneLabel: "Phone",
+                    emailLabel: "Email",
+                    sendInquiryTitle: "Send an Inquiry",
+                    formNameLabel: "Full Name",
+                    formNamePlaceholder: "Parent's Name",
+                    formEmailLabel: "Email Address",
+                    formEmailPlaceholder: "you@example.com",
+                    formMessageLabel: "Your Message/Inquiry",
+                    formMessagePlaceholder: "I would like to know about class 1 admission...",
+                    formSubmitBtn: "Submit Inquiry",
+                    formSuccessMsg: "<i class='fas fa-check-circle mr-2'></i> Thank you! Your inquiry has been sent. We will contact you shortly.",
+                    formErrorMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> Something went wrong. Please try again.",
+                    footerSchoolName: "Abhyuday High. Sec. School",
+                    footerSchoolDesc: "Committed to academic and holistic excellence in Neemuch. **Affiliated with MP Board.**",
+                    footerQuickLinks: "Quick Links",
+                    footerAbout: "About Us",
+                    footerEvents: "Events & News",
+                    footerGallery: "School Gallery",
+                    footerSupport: "Support",
+                    footerAdmissionDoc: "Essential Document for Admission",
+                    footerSyllabus: "Syllabus Details",
+                    footerResults: "Check Results",
+                    footerContactAdmissions: "Contact Admissions",
+                    footerContactInfo: "Contact Info",
+                    footerAddress: "10 Jaroli Bhawan, Dusshera Maidan, Neemuch",
+                    copyright: "Abhyuday Higher Secondary School. All Rights Reserved.",
+                    modalAdmissionTitle: "Essential Documents for Admission",
+                    modalAdmissionSubtitle: "Please refer to the checklist of required documents for the admission process.",
+                    docChecklistTitle: "Required Documents Checklist",
+                    docChecklistSubtitle: "Please prepare the following documents. You may be asked to present them during the admission process.",
+                    docTC: "TC (Transfer Certificate)",
+                    docMarksheet: "Marksheet",
+                    docMigration: "Migration (for other boards)",
+                    docBirthCert: "Birth Certificate",
+                    docAadhar: "Aadhar Card",
+                    docRation: "Ration Card",
+                    docSamagra: "Samagra ID",
+                    docCaste: "Caste Certificate",
+                    docMPTAAS: "MPTAAS (For SC/ST only)",
+                    docIncome: "Income Certificate",
+                    docBank: "Bank Passbook",
+                    docParentID: "Parent's ID"
+                },
+                hi: {
+                    enquiryFormLink: "पूछताछ फ़ॉर्म",
+                    schoolName: "अभ्युदय उच्चतर माध्यमिक विद्यालय",
+                    schoolLocation: "नीमच",
+                    navHome: "होम",
+                    navAbout: "हमारे बारे में",
+                    navEvents: "कार्यक्रम",
+                    navGallery: "गैलरी",
+                    navSyllabus: "पाठ्यक्रम",
+                    navResult: "परिणाम",
+                    navContact: "संपर्क",
+                    navHomeMobile: "होम",
+                    navAboutMobile: "हमारे बारे में",
+                    navEventsMobile: "कार्यक्रम",
+                    navGalleryMobile: "गैलरी",
+                    navSyllabusMobile: "पाठ्यक्रम",
+                    navResultMobile: "परिणाम",
+                    navContactMobile: "संपर्क",
+                    heroTitle: "शिक्षा में उत्कृष्टता",
+                    heroSubtitle: "नीमच, मध्य प्रदेश में छात्रों को सीखने, बढ़ने और सफल होने के लिए एक पोषण वातावरण प्रदान करना।",
+                    essentialInfoTitle: "आवश्यक जानकारी",
+                    essentialInfoSubtitle: "हमारे स्कूल समुदाय के बारे में आपको जो कुछ भी जानने की जरूरत है, वह सब यहां पाएं।",
+                    admissionCardTitle: "प्रवेश के लिए आवश्यक दस्तावेज़",
+                    admissionCardDesc: "आगामी शैक्षणिक वर्ष के लिए आवश्यक दस्तावेजों की सूची देखने के लिए क्लिक करें।",
+                    syllabusCardTitle: "पाठ्यक्रम का अवलोकन",
+                    syllabusCardDesc: "सभी कक्षाओं के लिए हमारे व्यापक पाठ्यक्रम का अन्वेषण करें।",
+                    welcomeTitle: "अभ्युदय उच्चतर माध्यमिक विद्यालय में आपका स्वागत है",
+                    welcomeDesc: "अभ्युदय उच्चतर माध्यमिक विद्यालय नीमच में गुणवत्तापूर्ण शिक्षा का एक आधारशिला है, जो अकादमिक कठोरता और समग्र उत्कृष्टता के लिए प्रतिबद्ध है। हमारे प्रधानाचार्य और निदेशक के कुशल नेतृत्व में, हम अपने समुदाय के लिए महत्वपूर्ण सोच, नैतिक मूल्यों और डिजिटल-प्रथम संचार के वातावरण को बढ़ावा देते हैं।",
+                    learnMoreBtn: "हमारे बारे में और जानें",
+                    aboutPageTitle: "अभ्युदय उच्चतर माध्यमिक विद्यालय में आपका स्वागत है",
+                    aboutPageSubtitle: "भविष्य के नेताओं को आकार देने के लिए प्रतिबद्ध एक प्रतिष्ठित शैक्षणिक संस्थान।",
+                    visionTitle: "हमारी दृष्टि और नेतृत्व",
+                    visionDesc1: "अभ्युदय उच्चतर माध्यमिक विद्यालय नीमच में गुणवत्तापूर्ण शिक्षा का एक आधारशिला है। हमारा उद्देश्य माता-पिता और छात्रों के लिए एक **डिजिटल-प्रथम अनुभव** प्रदान करना है, जिससे अकादमिक जानकारी और स्कूल संचार पारदर्शी और आसानी से सुलभ हो।",
+                    visionDesc2: "**प्रधानाचार्य देशना जैन** और **निदेशक/मालिक श्री प्रकाश जैन** के कुशल नेतृत्व में, हम अकादमिक कठोरता और समग्र उत्कृष्टता के लिए समर्पित हैं, महत्वपूर्ण सोच और नैतिक मूल्यों को बढ़ावा देते हैं।",
+                    missionQuote: `"हमारा मिशन आधुनिक, इंटरैक्टिव प्रौद्योगिकी के माध्यम से संचार और पहुंच में सुधार करना है ताकि हमारे समुदाय की बेहतर सेवा हो सके।"`,
+                    eventsTitle: "स्कूल जीवन और कार्यक्रम कैलेंडर",
+                    eventsSubtitle: "पूरे वर्ष सीखने, रचनात्मकता और खेल भावना का जश्न मनाना।",
+                    swipeHint: "और कार्यक्रम देखने के लिए बाएं या दाएं स्वाइप करें।",
+                    galleryTitle: "हमारी कैंपस गैलरी",
+                    gallerySubtitle: "अभ्युदय स्कूल के जीवंत जीवन की एक झलक।",
+                    galleryClassrooms: "कक्षाएँ",
+                    galleryScienceLab: "विज्ञान प्रयोगशाला",
+                    galleryAssembly: "सभा",
+                    galleryComputerLab: "कंप्यूटर प्रयोगशाला",
+                    galleryHint: "तस्वीरों का पता लगाने के लिए एक श्रेणी पर क्लिक करें।",
+                    syllabusTitle: "पाठ्यक्रम और सिलेबस",
+                    syllabusSubtitle: "मप्र बोर्ड पाठ्यक्रम के अनुसार विभिन्न स्तरों पर प्रस्तुत विषयों का एक सिंहावलोकन।",
+                    tabPrePrimary: "प्री-प्राइमरी",
+                    tabPrimary: "प्राइमरी (1-5)",
+                    tabMiddle: "मिडिल (6-8)",
+                    tabSecondary: "सेकेंडरी (9-10)",
+                    tabHigherSecondary: "हायर सेकेंडरी (11-12)",
+                    syllabusContact: "विस्तृत कक्षा-वार पाठ्यक्रम के लिए, कृपया स्कूल कार्यालय से संपर्क करें।",
+                    resultTitle: "अपना परिणाम जांचें",
+                    resultSubtitle: "अपने शैक्षणिक परिणाम देखने के लिए नीचे अपना विवरण दर्ज करें।",
+                    rollNumberLabel: "रोल नंबर",
+                    rollNumberPlaceholder: "अपना रोल नंबर दर्ज करें",
+                    selectClassLabel: "कक्षा चुनें",
+                    selectClassOption: "-- अपनी कक्षा चुनें --",
+                    optPrimary: "प्राइमरी (पहली - 5वीं)",
+                    class1: "कक्षा 1",
+                    class2: "कक्षा 2",
+                    class3: "कक्षा 3",
+                    class4: "कक्षा 4",
+                    class5: "कक्षा 5",
+                    optMiddle: "मिडिल (6वीं - 8वीं)",
+                    class6: "कक्षा 6",
+                    class7: "कक्षा 7",
+                    class8: "कक्षा 8",
+                    optSecondary: "सेकेंडरी (9वीं - 10वीं)",
+                    class9: "कक्षा 9",
+                    class10: "कक्षा 10",
+                    optHigherSecondary: "हायर सेकेंडरी (11वीं - 12वीं)",
+                    class11: "कक्षा 11",
+                    class12: "कक्षा 12",
+                    viewResultBtn: "परिणाम देखें",
+                    resultInfo: "नोट: परिणाम की कार्यक्षमता वर्तमान में विकास के अधीन है। आधिकारिक परिणामों के लिए कृपया स्कूल से संपर्क करें।",
+                    contactTitle: "अभ्युदय उच्चतर माध्यमिक विद्यालय से संपर्क करें",
+                    contactSubtitle: "हम प्रवेश, पाठ्यक्रम और सामान्य स्कूल संचालन के संबंध में आपके प्रश्नों का उत्तर देने के लिए यहां हैं।",
+                    contactDetailsTitle: "स्कूल संपर्क विवरण",
+                    addressLabel: "पता",
+                    addressValue: "10 जारोली भवन, दशहरा मैदान, नीमच",
+                    phoneLabel: "फ़ोन",
+                    emailLabel: "ईमेल",
+                    sendInquiryTitle: "एक पूछताछ भेजें",
+                    formNameLabel: "पूरा नाम",
+                    formNamePlaceholder: "अभिभावक का नाम",
+                    formEmailLabel: "ईमेल पता",
+                    formEmailPlaceholder: "you@example.com",
+                    formMessageLabel: "आपका संदेश/पूछताछ",
+                    formMessagePlaceholder: "मैं कक्षा 1 में प्रवेश के बारे में जानना चाहता हूं...",
+                    formSubmitBtn: "पूछताछ सबमिट करें",
+                    formSuccessMsg: "<i class='fas fa-check-circle mr-2'></i> धन्यवाद! आपकी पूछताछ भेज दी गई है। हम शीघ्र ही आपसे संपर्क करेंगे।",
+                    formErrorMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> कुछ गलत हो गया। कृपया पुन: प्रयास करें।",
+                    footerSchoolName: "अभ्युदय उच्चतर माध्यमिक विद्यालय",
+                    footerSchoolDesc: "नीमच में अकादमिक और समग्र उत्कृष्टता के लिए प्रतिबद्ध। **एमपी बोर्ड से संबद्ध।**",
+                    footerQuickLinks: "त्वरित लिंक्स",
+                    footerAbout: "हमारे बारे में",
+                    footerEvents: "कार्यक्रम और समाचार",
+                    footerGallery: "स्कूल गैलरी",
+                    footerSupport: "सहयोग",
+                    footerAdmissionDoc: "प्रवेश के लिए आवश्यक दस्तावेज़",
+                    footerSyllabus: "पाठ्यक्रम विवरण",
+                    footerResults: "परिणाम जांचें",
+                    footerContactAdmissions: "प्रवेश के लिए संपर्क करें",
+                    footerContactInfo: "संपर्क जानकारी",
+                    footerAddress: "10 जारोली भवन, दशहरा मैदान, नीमच",
+                    copyright: "अभ्युदय उच्चतर माध्यमिक विद्यालय। सर्वाधिकार सुरक्षित।",
+                    modalAdmissionTitle: "प्रवेश के लिए आवश्यक दस्तावेज़",
+                    modalAdmissionSubtitle: "प्रवेश प्रक्रिया के लिए आवश्यक दस्तावेजों की चेकलिस्ट देखें।",
+                    docChecklistTitle: "आवश्यक दस्तावेज़ चेकलिस्ट",
+                    docChecklistSubtitle: "कृपया निम्नलिखित दस्तावेज़ तैयार करें। प्रवेश प्रक्रिया के दौरान आपसे इन्हें प्रस्तुत करने के लिए कहा जा सकता है।",
+                    docTC: "टीसी (स्थानांतरण प्रमाण पत्र)",
+                    docMarksheet: "मार्कशीट",
+                    docMigration: "माइग्रेशन (अन्य बोर्डों के लिए)",
+                    docBirthCert: "जन्म प्रमाण पत्र",
+                    docAadhar: "आधार कार्ड",
+                    docRation: "राशन कार्ड",
+                    docSamagra: "समग्र आईडी",
+                    docCaste: "जाति प्रमाण पत्र",
+                    docMPTAAS: "एमपीटीएएएस (केवल एससी/एसटी के लिए)",
+                    docIncome: "आय प्रमाण पत्र",
+                    docBank: "बैंक पासबुक",
+                    docParentID: "माता-पिता का आईडी"
+                }
+            };
+            
+            let currentLanguage = 'en';
+
+            const setLanguage = (lang) => {
+                currentLanguage = lang;
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (translations[lang][key]) {
+                        element.innerHTML = translations[lang][key];
+                    }
+                });
+                document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+                    const key = element.getAttribute('data-translate-placeholder');
+                    if (translations[lang][key]) {
+                        element.placeholder = translations[lang][key];
+                    }
+                });
+                // Update syllabus content dynamically
+                buildSyllabusContent(lang);
+            };
+
+            document.getElementById('language-toggle').addEventListener('click', () => {
+                const newLang = currentLanguage === 'en' ? 'hi' : 'en';
+                setLanguage(newLang);
+            });
+
 
             // --- HEADER SCROLL EFFECT ---
             const mainNav = document.getElementById('main-nav');
@@ -768,7 +929,7 @@
             };
 
             window.addEventListener('hashchange', handleRouteChange);
-            handleRouteChange(); // Initial load
+            
 
             // Mobile Menu Toggle
             document.getElementById('mobile-menu-button').addEventListener('click', () => {
@@ -890,15 +1051,203 @@
                     e.preventDefault();
                     const resultInfo = document.getElementById('result-info');
                     if (resultInfo) {
-                       resultInfo.textContent = "Result checking is currently unavailable online. Please contact the school office for your results.";
+                       resultInfo.textContent = currentLanguage === 'en' 
+                        ? "Result checking is currently unavailable online. Please contact the school office for your results."
+                        : "परिणाम जांचना वर्तमान में ऑनलाइन उपलब्ध नहीं है। कृपया अपने परिणामों के लिए स्कूल कार्यालय से संपर्क करें।";
                        resultInfo.classList.add('text-red-600', 'font-bold');
                     }
                 });
             }
             
-            // --- SYLLABUS TABS LOGIC ---
+            // --- SYLLABUS TABS & CONTENT LOGIC ---
             const syllabusTabsPage = document.querySelectorAll('.syllabus-tab-page');
-            const syllabusContentPanesPage = document.querySelectorAll('.syllabus-content-pane-page');
+            const syllabusContentContainer = document.getElementById('syllabus-content-page');
+            
+            const syllabusContentData = {
+                en: {
+                    prePrimary: {
+                        title: "Pre-Primary (Nursery, LKG, UKG)",
+                        desc: "Focus on foundational learning through **play-based activities**, ensuring cognitive, social, and motor skill development.",
+                        sections: [
+                            {
+                                title: "English Medium Focus",
+                                icon: "fa-globe",
+                                subjects: [
+                                    "English (Phonics, Rhymes, Writing)",
+                                    "Hindi (Akshar Gyan, Kavita)",
+                                    "Mathematics (Numbers, Shapes, Colors)",
+                                    "General Awareness (Fruits, Animals, Our Body)",
+                                    "Art & Craft, Music, and Dance"
+                                ]
+                            }
+                        ]
+                    },
+                    primary: {
+                        title: "Primary (Classes 1 - 5)",
+                        desc: "Building **core academic skills** in literacy, numeracy, and environmental awareness.",
+                        sections: [
+                            { title: "Languages (English & Hindi)", subjects: ["Grammar and Vocabulary Building", "Reading Comprehension and Story Telling", "Creative Writing and Composition"] },
+                            { title: "Mathematics", subjects: ["Number System and Arithmetic Operations", "Basic Geometry: Shapes and Spatial Understanding", "Measurement of Length, Weight, and Capacity", "Introduction to Data Handling"] },
+                            { title: "Environmental Studies (EVS)", subjects: ["Our Body, Family, and Festivals", "Plants, Animals, and Our Environment", "Water, Air, and Weather"] },
+                            { title: "Other Subjects", subjects: ["Computer Science: Basic digital literacy and MS Office", "General Knowledge & Moral Science", "Art, Craft, Music, and Physical Education"] }
+                        ]
+                    },
+                    middle: {
+                        title: "Middle (Classes 6 - 8)",
+                        desc: "Transitioning to **specialized subjects** with an introduction to core scientific and social principles.",
+                        grid: [
+                            [
+                                { title: "Languages", desc: "English, Hindi, and Sanskrit (as third language)" },
+                                { title: "Mathematics", desc: "Algebra, Geometry, Mensuration, and Data Handling." },
+                                { title: "Computer Science", desc: "Programming basics, Internet concepts, and advanced tools." }
+                            ],
+                            [
+                                { title: "Science", list: ["<b>Physics:</b> Motion, Force, Light, Electricity", "<b>Chemistry:</b> Matter, Atoms, Acids & Bases, Metals", "<b>Biology:</b> Cells, Microorganisms, Conservation"] },
+                                { title: "Social Science", list: ["<b>History:</b> Ancient, Medieval, and Modern India", "<b>Civics:</b> Constitution, Government, Democracy", "<b>Geography:</b> Earth, Resources, Agriculture"] }
+                            ]
+                        ]
+                    },
+                    secondary: {
+                        title: "Secondary (Classes 9 - 10)",
+                        desc: "Preparing students for **board examinations** with a structured, intensive curriculum.",
+                        sectionTitle: "Compulsory Subjects (MP Board)",
+                        subjects: ["Hindi", "Sanskrit", "English (Language & Literature)", "Mathematics (Standard / Basic)", "Science (Theory & Practical)", "Social Science (History, Geography, Economics, Political Science)"]
+                    },
+                    higherSecondary: {
+                        title: "Higher Secondary (Classes 11 - 12)",
+                        desc: "Offering specialized streams to align with **career aspirations** and higher education pathways.",
+                        streams: [
+                            { title: "Science Stream", subjects: "Physics, Chemistry, **Mathematics / Biology**, English, Hindi." },
+                            { title: "Commerce Stream", subjects: "Accountancy, Business Studies, Economics, English, Hindi." },
+                            { title: "Arts Stream", subjects: "History, Political Science, Sociology, Economics, English, Hindi." }
+                        ]
+                    }
+                },
+                hi: {
+                    prePrimary: {
+                        title: "प्री-प्राइमरी (नर्सरी, एलकेजी, यूकेजी)",
+                        desc: "**खेल-आधारित गतिविधियों** के माध्यम से मूलभूत शिक्षा पर ध्यान केंद्रित करना, संज्ञानात्मक, सामाजिक और मोटर कौशल विकास सुनिश्चित करना।",
+                        sections: [
+                            {
+                                title: "अंग्रेजी माध्यम फोकस",
+                                icon: "fa-globe",
+                                subjects: [
+                                    "अंग्रेजी (ध्वनि, कविताएं, लेखन)",
+                                    "हिंदी (अक्षर ज्ञान, कविता)",
+                                    "गणित (संख्याएं, आकृतियाँ, रंग)",
+                                    "सामान्य जागरूकता (फल, जानवर, हमारा शरीर)",
+                                    "कला और शिल्प, संगीत, और नृत्य"
+                                ]
+                            }
+                        ]
+                    },
+                    primary: {
+                        title: "प्राइमरी (कक्षा 1 - 5)",
+                        desc: "साक्षरता, संख्यात्मकता और पर्यावरणीय जागरूकता में **मुख्य शैक्षणिक कौशल** का निर्माण।",
+                        sections: [
+                            { title: "भाषाएँ (अंग्रेजी और हिंदी)", subjects: ["व्याकरण और शब्दावली निर्माण", "पठन बोध और कहानी सुनाना", "रचनात्मक लेखन और रचना"] },
+                            { title: "गणित", subjects: ["संख्या प्रणाली और अंकगणितीय संचालन", "मूल ज्यामिति: आकृतियाँ और स्थानिक समझ", "लंबाई, वजन और क्षमता का मापन", "डेटा हैंडलिंग का परिचय"] },
+                            { title: "पर्यावरण अध्ययन (ईवीएस)", subjects: ["हमारा शरीर, परिवार और त्यौहार", "पौधे, जानवर और हमारा पर्यावरण", "जल, वायु और मौसम"] },
+                            { title: "अन्य विषय", subjects: ["कंप्यूटर विज्ञान: मूल डिजिटल साक्षरता और एमएस ऑफिस", "सामान्य ज्ञान और नैतिक विज्ञान", "कला, शिल्प, संगीत और शारीरिक शिक्षा"] }
+                        ]
+                    },
+                    middle: {
+                        title: "मिडिल (कक्षा 6 - 8)",
+                        desc: "मुख्य वैज्ञानिक और सामाजिक सिद्धांतों के परिचय के साथ **विशेष विषयों** में संक्रमण।",
+                        grid: [
+                            [
+                                { title: "भाषाएँ", desc: "अंग्रेजी, हिंदी, और संस्कृत (तीसरी भाषा के रूप में)" },
+                                { title: "गणित", desc: "बीजगणित, ज्यामिति, क्षेत्रमिति, और डेटा हैंडलिंग।" },
+                                { title: "कंप्यूटर विज्ञान", desc: "प्रोग्रामिंग की मूल बातें, इंटरनेट अवधारणाएं, और उन्नत उपकरण।" }
+                            ],
+                            [
+                                { title: "विज्ञान", list: ["<b>भौतिकी:</b> गति, बल, प्रकाश, विद्युत", "<b>रसायन विज्ञान:</b> पदार्थ, परमाणु, अम्ल और क्षार, धातु", "<b>जीव विज्ञान:</b> कोशिकाएं, सूक्ष्मजीव, संरक्षण"] },
+                                { title: "सामाजिक विज्ञान", list: ["<b>इतिहास:</b> प्राचीन, मध्यकालीन और आधुनिक भारत", "<b>नागरिक शास्त्र:</b> संविधान, सरकार, लोकतंत्र", "<b>भूगोल:</b> पृथ्वी, संसाधन, कृषि"] }
+                            ]
+                        ]
+                    },
+                    secondary: {
+                        title: "सेकेंडरी (कक्षा 9 - 10)",
+                        desc: "एक संरचित, गहन पाठ्यक्रम के साथ **बोर्ड परीक्षाओं** के लिए छात्रों को तैयार करना।",
+                        sectionTitle: "अनिवार्य विषय (एमपी बोर्ड)",
+                        subjects: ["हिंदी", "संस्कृत", "अंग्रेजी (भाषा और साहित्य)", "गणित (मानक / मूल)", "विज्ञान (सिद्धांत और व्यावहारिक)", "सामाजिक विज्ञान (इतिहास, भूगोल, अर्थशास्त्र, राजनीति विज्ञान)"]
+                    },
+                    higherSecondary: {
+                        title: "हायर सेकेंडरी (कक्षा 11 - 12)",
+                        desc: "**कैरियर की आकांक्षाओं** और उच्च शिक्षा मार्गों के साथ संरेखित करने के लिए विशेष धाराओं की पेशकश।",
+                        streams: [
+                            { title: "विज्ञान स्ट्रीम", subjects: "भौतिकी, रसायन विज्ञान, **गणित / जीव विज्ञान**, अंग्रेजी, हिंदी।" },
+                            { title: "वाणिज्य स्ट्रीम", subjects: "लेखा, व्यवसाय अध्ययन, अर्थशास्त्र, अंग्रेजी, हिंदी।" },
+                            { title: "कला स्ट्रीम", subjects: "इतिहास, राजनीति विज्ञान, समाजशास्त्र, अर्थशास्त्र, अंग्रेजी, हिंदी।" }
+                        ]
+                    }
+                }
+            };
+            
+            function buildSyllabusContent(lang) {
+                const data = syllabusContentData[lang];
+                let html = `
+                    <div data-content="pre-primary" class="syllabus-content-pane-page">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">${data.prePrimary.title}</h3>
+                        <p class="text-gray-600 mb-6">${data.prePrimary.desc}</p>
+                        <div class="grid md:grid-cols-1 gap-8 max-w-md mx-auto">
+                            ${data.prePrimary.sections.map(section => `
+                                <div class="p-4 bg-green-50 rounded-lg">
+                                    <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3 flex items-center"><i class="fas ${section.icon} mr-2"></i> ${section.title}</h4>
+                                    <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">${section.subjects.map(s => `<li>${s}</li>`).join('')}</ul>
+                                </div>`).join('')}
+                        </div>
+                    </div>
+                    <div data-content="primary" class="syllabus-content-pane-page hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">${data.primary.title}</h3>
+                        <p class="text-gray-600 mb-6">${data.primary.desc}</p>
+                        <div class="space-y-4">${data.primary.sections.map(section => `
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <h4 class="font-bold text-green-800">${section.title}</h4>
+                                <ul class="list-disc list-inside mt-2 text-gray-700 text-sm space-y-1">${section.subjects.map(s => `<li>${s}</li>`).join('')}</ul>
+                            </div>`).join('')}
+                        </div>
+                    </div>
+                    <div data-content="middle" class="syllabus-content-pane-page hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">${data.middle.title}</h3>
+                        <p class="text-gray-600 mb-6">${data.middle.desc}</p>
+                        <div class="grid md:grid-cols-2 gap-4">${data.middle.grid.map(col => `
+                            <div class="p-4 bg-green-50 rounded-lg space-y-3">${col.map(item => `
+                                <div>
+                                    <h4 class="font-bold text-green-800">${item.title}</h4>
+                                    ${item.desc ? `<p class="text-sm text-gray-700">${item.desc}</p>` : ''}
+                                    ${item.list ? `<ul class="list-disc list-inside mt-1 text-gray-700 text-sm space-y-1">${item.list.map(li => `<li>${li}</li>`).join('')}</ul>` : ''}
+                                </div>`).join('')}
+                            </div>`).join('')}
+                        </div>
+                    </div>
+                    <div data-content="secondary" class="syllabus-content-pane-page hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">${data.secondary.title}</h3>
+                        <p class="text-gray-600 mb-6">${data.secondary.desc}</p>
+                        <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3">${data.secondary.sectionTitle}</h4>
+                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-2 grid sm:grid-cols-2">${data.secondary.subjects.map(s => `<li>${s}</li>`).join('')}</ul>
+                    </div>
+                    <div data-content="higher-secondary" class="syllabus-content-pane-page hidden">
+                        <h3 class="text-2xl font-bold mb-4 text-green-700">${data.higherSecondary.title}</h3>
+                        <p class="text-gray-600 mb-6">${data.higherSecondary.desc}</p>
+                        <div class="space-y-6">${data.higherSecondary.streams.map(stream => `
+                            <div class="p-4 border border-green-200 rounded-lg">
+                                <h4 class="font-bold text-green-800">${stream.title}</h4>
+                                <p class="text-gray-700 mt-1">${stream.subjects}</p>
+                            </div>`).join('')}
+                        </div>
+                    </div>`;
+                syllabusContentContainer.innerHTML = html;
+                
+                // After rebuilding, we need to re-select the active tab
+                const activeTab = document.querySelector('.syllabus-tab-page.active-tab');
+                if(activeTab) {
+                    const tabId = activeTab.getAttribute('data-tab');
+                    document.querySelector(`.syllabus-content-pane-page[data-content="${tabId}"]`).classList.remove('hidden');
+                }
+            }
+
+
             syllabusTabsPage.forEach(tab => {
                 tab.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -911,9 +1260,12 @@
                     tab.classList.remove('text-gray-600');
                     tab.classList.add('text-green-700');
 
-                    syllabusContentPanesPage.forEach(pane => pane.classList.add('hidden'));
+                    const allPanes = syllabusContentContainer.querySelectorAll('.syllabus-content-pane-page');
+                    allPanes.forEach(pane => pane.classList.add('hidden'));
+
                     const tabId = tab.getAttribute('data-tab');
-                    document.querySelector(`.syllabus-content-pane-page[data-content="${tabId}"]`).classList.remove('hidden');
+                    const activePane = syllabusContentContainer.querySelector(`.syllabus-content-pane-page[data-content="${tabId}"]`);
+                    if(activePane) activePane.classList.remove('hidden');
                 });
             });
 
@@ -1247,6 +1599,10 @@
                 if (e.key === 'ArrowLeft') prevImageBtn.click();
                 if (e.key === 'ArrowRight') nextImageBtn.click();
             });
+
+            // Initial load
+            handleRouteChange();
+            setLanguage('en');
 
         });
     </script>
