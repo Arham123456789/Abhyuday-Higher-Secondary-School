@@ -84,7 +84,8 @@
         <!-- Main Navigation -->
         <nav id="main-nav" class="bg-white shadow-md header-transition">
             <div class="container mx-auto px-6 py-2 flex justify-between items-center">
-                <a href="#/home" class="text-xl font-bold text-green-700 nav-link">
+                <a href="#/home" class="flex items-center text-xl font-bold text-green-700 nav-link">
+                    <img src="WhatsApp Image 2025-10-04 at 15.33.39_b4a0e95d.jpg" alt="Abhyuday School Logo" class="h-10 mr-3">
                     Abhyuday High. Sec. School
                 </a>
                 <div class="hidden md:flex space-x-6 items-center">
@@ -298,23 +299,15 @@
                             <div data-content="pre-primary" class="syllabus-content-pane-page">
                                 <h3 class="text-2xl font-bold mb-4 text-green-700">Pre-Primary (Nursery, LKG, UKG)</h3>
                                 <p class="text-gray-600 mb-6">Focus on foundational learning through **play-based activities**, ensuring cognitive, social, and motor skill development.</p>
-                                <div class="grid md:grid-cols-2 gap-8">
+                                <div class="grid md:grid-cols-1 gap-8 max-w-md mx-auto">
                                     <div class="p-4 bg-green-50 rounded-lg">
                                         <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3 flex items-center"><i class="fas fa-globe mr-2"></i> English Medium Focus</h4>
                                         <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
                                             <li>English (Phonics, Rhymes, Writing)</li>
+                                            <li>Hindi (Akshar Gyan, Kavita)</li>
                                             <li>Mathematics (Numbers, Shapes, Colors)</li>
                                             <li>General Awareness (Fruits, Animals, Our Body)</li>
                                             <li>Art & Craft, Music, and Dance</li>
-                                        </ul>
-                                    </div>
-                                    <div class="p-4 bg-green-50 rounded-lg">
-                                        <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3 flex items-center"><i class="fas fa-language mr-2"></i> Hindi Medium Focus</h4>
-                                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                                            <li>Hindi (Akshar Gyan, Kavita, Likhai)</li>
-                                            <li>Ganit (Ank, Aakriti, Rang)</li>
-                                            <li>Samanya Gyan (Phal, Janwar, Hamara Sharir)</li>
-                                            <li>Kala, Sangeet, aur Nritya</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -401,8 +394,8 @@
                                 <p class="text-gray-600 mb-6">Preparing students for **board examinations** with a structured, intensive curriculum.</p>
                                 <h4 class="font-bold text-green-800 border-b border-green-300 pb-2 mb-3">Compulsory Subjects (MP Board)</h4>
                                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-2 grid sm:grid-cols-2">
-                                    <li>Hindi (Course A/B)</li>
-                                    <li>Sanskrit (in class 9 only)</li>
+                                    <li>Hindi</li>
+                                    <li>Sanskrit</li>
                                     <li>English (Language & Literature)</li>
                                     <li>Mathematics (Standard / Basic)</li>
                                     <li>Science (Theory & Practical)</li>
@@ -791,6 +784,14 @@
 
                 inquiryForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
+                    
+                    // Check if all required fields are filled
+                    if (!inquiryForm.checkValidity()) {
+                        // Use the browser's built-in validation UI to inform the user
+                        inquiryForm.reportValidity();
+                        return;
+                    }
+
                     inquirySuccessMsg.classList.add('hidden');
                     inquiryErrorMsg.classList.add('hidden');
                     inquirySubmitBtn.textContent = 'Sending...';
@@ -1249,5 +1250,3 @@
 
 </body>
 </html>
-
-
