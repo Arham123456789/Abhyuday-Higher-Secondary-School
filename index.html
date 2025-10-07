@@ -523,7 +523,7 @@
     <!-- JavaScript & Firebase Logic -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, collection, addDoc, serverTimestamp, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -533,11 +533,24 @@
             
             // --- FIREBASE INITIALIZATION ---
             let db;
+            let isAuthReady = false; // Flag to check if auth is complete
             try {
                 const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
                 const app = initializeApp(firebaseConfig);
                 const auth = getAuth(app);
                 db = getFirestore(app);
+
+                // Listen for authentication state changes
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                        // User is signed in.
+                        isAuthReady = true;
+                        console.log("Firebase Authentication is ready. User UID:", user.uid);
+                    } else {
+                        // User is signed out.
+                        isAuthReady = false;
+                    }
+                });
 
                 // Authenticate user for Firestore access
                 if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
@@ -545,7 +558,7 @@
                 } else {
                     signInAnonymously(auth);
                 }
-                console.log("Firebase initialized and attempting anonymous sign-in.");
+                console.log("Firebase initialized and attempting sign-in.");
             } catch (error) {
                 console.error("Firebase initialization failed:", error);
             }
@@ -624,6 +637,7 @@
                     formSubmitBtn: "Submit Inquiry",
                     formSuccessMsg: "<i class='fas fa-check-circle mr-2'></i> Thank you! Your inquiry has been sent. We will contact you shortly.",
                     formErrorMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> Something went wrong. Please try again.",
+                    formNotReadyMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> Database not ready. Please wait a moment and try again.",
                     footerSchoolName: "Abhyuday High. Sec. School",
                     footerSchoolDesc: "Committed to academic and holistic excellence in Neemuch. **Affiliated with MP Board.**",
                     footerQuickLinks: "Quick Links",
@@ -727,6 +741,7 @@
                     formSubmitBtn: "पूछताछ सबमिट करें",
                     formSuccessMsg: "<i class='fas fa-check-circle mr-2'></i> धन्यवाद! आपकी पूछताछ भेज दी गई है। हम शीघ्र ही आपसे संपर्क करेंगे।",
                     formErrorMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> कुछ गलत हो गया। कृपया पुन: प्रयास करें।",
+                    formNotReadyMsg: "<i class='fas fa-exclamation-triangle mr-2'></i> डेटाबेस तैयार नहीं है। कृपया कुछ क्षण प्रतीक्षा करें और फिर से प्रयास करें।",
                     footerSchoolName: "अभ्युदय उच्चतर माध्यमिक विद्यालय",
                     footerSchoolDesc: "नीमच में अकादमिक और समग्र उत्कृष्टता के लिए प्रतिबद्ध। **एमपी बोर्ड से संबद्ध।**",
                     footerQuickLinks: "त्वरित लिंक्स",
@@ -886,8 +901,8 @@
                     inquirySubmitBtn.disabled = true;
 
 
-                    if (!db) {
-                        inquiryErrorMsg.innerHTML = `<i class='fas fa-exclamation-triangle mr-2'></i> Database connection not available.`;
+                    if (!db || !isAuthReady) {
+                        inquiryErrorMsg.innerHTML = translations[currentLanguage].formNotReadyMsg;
                         inquiryErrorMsg.classList.remove('hidden');
                         inquirySubmitBtn.textContent = originalBtnText;
                         inquirySubmitBtn.disabled = false;
@@ -914,6 +929,7 @@
                         }, 5000);
                     } catch (error) {
                         console.error("Error submitting inquiry: ", error);
+                        inquiryErrorMsg.innerHTML = translations[currentLanguage].formErrorMsg;
                         inquiryErrorMsg.classList.remove('hidden');
                         inquirySubmitBtn.textContent = originalBtnText;
                         inquirySubmitBtn.disabled = false;
@@ -1522,4 +1538,3 @@
 
 </body>
 </html>
-
