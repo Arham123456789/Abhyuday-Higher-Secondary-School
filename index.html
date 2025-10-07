@@ -74,6 +74,7 @@
                     <button id="language-toggle" class="text-white hover:text-gray-300 transition text-lg" aria-label="Toggle language">
                         <i class="fas fa-globe"></i>
                     </button>
+                    <a href="#/contact" class="border border-white rounded-lg px-3 py-1 hover:bg-white hover:text-green-800 transition text-xs sm:text-sm" data-translate="enquiryFormLink">Enquiry Form</a>
                     <div class="hidden sm:flex items-center space-x-2">
                         <i class="fas fa-phone-alt"></i>
                         <a href="tel:+919111980203" class="hover:text-gray-300 transition">9111980203</a>
@@ -540,7 +541,7 @@
                 const auth = getAuth(app);
                 db = getFirestore(app);
 
-                // Listen for authentication state changes
+                 // Listen for authentication state changes
                 onAuthStateChanged(auth, (user) => {
                     if (user) {
                         // User is signed in.
@@ -551,6 +552,7 @@
                         isAuthReady = false;
                     }
                 });
+
 
                 // Authenticate user for Firestore access
                 if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
@@ -887,9 +889,7 @@
                 inquiryForm.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     
-                    // Check if all required fields are filled
                     if (!inquiryForm.checkValidity()) {
-                        // Use the browser's built-in validation UI to inform the user
                         inquiryForm.reportValidity();
                         return;
                     }
@@ -899,7 +899,6 @@
                     const originalBtnText = inquirySubmitBtn.textContent;
                     inquirySubmitBtn.textContent = currentLanguage === 'en' ? 'Sending...' : 'भेज रहा है...';
                     inquirySubmitBtn.disabled = true;
-
 
                     if (!db || !isAuthReady) {
                         inquiryErrorMsg.innerHTML = translations[currentLanguage].formNotReadyMsg;
@@ -983,10 +982,6 @@
             window.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) closeModal();
             });
-
-            // --- RESULT FORM LOGIC ---
-            // Removed as the page is now a placeholder
-
             
             // --- SYLLABUS TABS & CONTENT LOGIC ---
             const syllabusTabsPage = document.querySelectorAll('.syllabus-tab-page');
@@ -1538,3 +1533,4 @@
 
 </body>
 </html>
+
